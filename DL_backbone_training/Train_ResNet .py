@@ -256,24 +256,24 @@ if __name__ == '__main__':
     parser.add_argument('--lrf', type = float, default = 0.01)
 
     parser.add_argument('--data_path', type = str,
-                        default = "G:\\Blur dataset\\blur_dataset_scaled")
+                        default = "G:\\dataset\\")
     parser.add_argument('--test_data_path', type = str,
-                        default = "D:\\w_tricle\\test")
+                        default = "D:\\")
     parser.add_argument('--model_type', type = str,
                         default = "ResNet50", help = "EfficientNetV2/ResNet50/WRN50-2/DenseNet161")
     parser.add_argument('--pretrained_weights', type = str, default = 'pre_efficientnetv2-s.pth',
                         help = 'initial weights path')
 
     parser.add_argument('--trained_weights', type = str,
-                        default = 'G:\\few_shot_exp\\Backbone\\Train_backbone\\ResNet50_weights',
+                        default = 'G:\\',
                         help = 'trained weights path for test')
 
     parser.add_argument('--conf_Mat_dir', type = str,
-                        default = 'G:\\few_shot_exp\\Backbone\\Train_backbone\\conf_Mat_wx',
+                        default = 'G:\\',
                         help = 'dir to store conf_Mat')
     parser.add_argument('--resume', type = bool, default = False)
     parser.add_argument('--resume_weight', type = str,
-                        default = 'G:\ssvm-fewshot\efficientnet\efficientnetv2-2\weights\model_last.pth',
+                        default = 'G:\\',
                         help = 'resume the train')
     parser.add_argument('--freeze-layers', type = bool, default = False)
     parser.add_argument('--device', default = 'cuda:0', help = 'device id (i.e. 0 or 0,1 or cpu)')
